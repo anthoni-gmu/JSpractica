@@ -8,11 +8,14 @@
     <title>Aprendiendo JavaScript</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./scss/custon.css">
+    <link rel="stylesheet" href="./css/reduce.css">
 </head>
 
 <body class="bg-dark">
     <main class="container d-flex flex-column align-items-center justify-content-center alto-100">
+        <div class="alert alert-danger d-none" id="alert" role="alert">
+            A simple danger alert—check it out!
+        </div>
         <div class="header">
             <div class="row">
                 <div class="col-12 text-info ">
@@ -39,23 +42,24 @@
             <div class="col-12 py-3 d-flex w-100 justify-content-center  ">
                 <div class="row">
                     <div class="col-6 col-md-3 p-2 d-flex justify-content-center">
-                        <button type="button" class="btn btn-secondary btn-lg w-100 justify-content-center d-flex p-md-3 mx-md-3 ">Add</button>
+                        <button type="button" id="btnAdd" class="btn btn-secondary btn-lg w-100 justify-content-center d-flex p-md-3 mx-md-3 ">Add</button>
                     </div>
                     <div class="col-6 col-md-3 p-2 d-flex justify-content-center">
-                        <button type="button" class="btn btn-secondary btn-lg w-100 justify-content-center d-flex py-md-3 mx-md-3 ">Substract</button>
+                        <button type="button" id="btnSub" class="btn btn-secondary btn-lg w-100 justify-content-center d-flex py-md-3 mx-md-3 ">Substract</button>
                     </div>
                     <div class="col-6 col-md-3 p-2 d-flex justify-content-center">
-                        <button type="button" class="btn btn-secondary btn-lg w-100 justify-content-center d-flex py-md-3 mx-md-3 ">Multiply</button>
+                        <button type="button" id="btnMul" class="btn btn-secondary btn-lg w-100 justify-content-center d-flex py-md-3 mx-md-3 ">Multiply</button>
                     </div>
                     <div class="col-6 col-md-3 p-2 d-flex justify-content-center">
-                        <button type="button" class="btn btn-secondary btn-lg w-100 justify-content-center d-flex py-md-3 mx-md-3 ">Divide</button>
+                        <button type="button" id="btnDiv" class="btn btn-secondary btn-lg w-100 justify-content-center d-flex py-md-3 mx-md-3 ">Divide</button>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-4 py-3 m-auto">
                 <div class="input-group mb-3 input-group-lg alto-input">
-                    <button type="button" class="fs-5 btn btn-outline-secondary">Result</button>
-                    <input type="text" class="fs-1 form-control" aria-label="Text input with segmented dropdown button">
+                    <button type="button" id="btnRes" class="fs-5 btn btn-outline-secondary">Result</button>
+                    <input type="text" class="fs-1 form-control " id="resul" aria-label="Text input with segmented dropdown button">
+
                 </div>
             </div>
         </div>
