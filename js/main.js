@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function TodoOperacion() {
         Operacion()
-        ResultVer(resul.value)
+
     }
 
     function Operacion() {
@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function Todo(button) {
         Solouno(button)
         Verificar(button)
-        console.log(resul.value)
+
 
     }
 
